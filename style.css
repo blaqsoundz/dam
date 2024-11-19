@@ -5,21 +5,21 @@
     font-family: 'poppins', sans-serif;
 }
 
-.hero {
+.hero{
     width: 100%;
     min-height: 100vh;
-    padding: 10px;
+    padding: 10px 10px;
     overflow: hidden;
     position: relative;
 }
 
-.hero::before {
+&::before {
     content: ' ';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background-image: url(image/Picsart_24-11-12_15-56-04-080.png);
     background-position: center;
     background-size: 50%;
@@ -35,6 +35,7 @@ nav {
 
 .logo {
     width: 140px;
+
 }
 
 nav ul li {
@@ -42,12 +43,15 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 15px;
+    width: 100%;
 }
 
 nav ul li a {
     text-decoration: none;
+    display: inline-block;
     color: #333;
     font-weight: 400;
+    width: 100%;
 }
 
 .login-btn {
@@ -74,19 +78,21 @@ nav ul li a {
     max-width: 600px;
 }
 
-.content h1 {
+.content h1{
     font-size: 70px;
     color: #222;
 }
 
-.content p {
+.content p{
     margin: 10px 0 30px;
     color: #333;
+    animation-delay: 0.5s;
 }
 
-.content.btn {
+.content.btn{
     padding: 15px 80px;
     font-size: 16px;
+    animation-delay: 1s;
 }
 
 .btn:hover {
